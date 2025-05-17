@@ -36,21 +36,21 @@ Ce portfolio est conçu pour être responsive et s'adapte automatiquement aux ap
 
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
-   git clone https://github.com/<votre-utilisateur>/<nom-du-repo>.git
+   git clone https://github.com/Jered-M/new-portfolio.git
    ```
 
 2. Accédez au répertoire du projet :
    ```bash
-   cd "my site/porfolio2"
+   cd new-portfolio
    ```
 
 3. Ouvrez le fichier `index.html` dans votre navigateur pour voir le site.
 
 ## Hébergement sur GitHub Pages
 
-1. Poussez le projet sur un dépôt GitHub.
+1. Poussez le projet sur le dépôt GitHub : [new-portfolio](https://github.com/Jered-M/new-portfolio).
 2. Activez GitHub Pages dans les paramètres du dépôt.
-3. Votre site sera accessible à l'URL : `https://<votre-utilisateur>.github.io/<nom-du-repo>`.
+3. Votre site sera accessible à l'URL : `https://Jered-M.github.io/new-portfolio`.
 
 ## Fonctionnalités
 
