@@ -15,6 +15,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Assure que le footer reste en bas du site */
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   header, .section, footer {
@@ -341,3 +350,29 @@
       transform: translateY(0);
     }
   }
+  
+  /* Style pour l'effet artificiel */
+.celebration {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #ff6f61;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

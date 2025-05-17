@@ -47,3 +47,18 @@ const countdownTimer = () => {
 };
 
 document.addEventListener('DOMContentLoaded', countdownTimer);
+
+function showCelebration() {
+  // Créer un élément pour le message
+  const celebrationMessage = document.createElement('div');
+  celebrationMessage.className = 'celebration';
+  celebrationMessage.textContent = 'Félicitations ! Vous avez trouvé le cadeau 🎉';
+
+  // Ajouter le message au corps du document
+  document.body.appendChild(celebrationMessage);
+
+  // Supprimer le message après 3 secondes
+  setTimeout(() => {
+    celebrationMessage.remove();
+  }, 3000);
+}
