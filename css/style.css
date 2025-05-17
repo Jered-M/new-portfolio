@@ -292,45 +292,29 @@
     h1 {
       font-size: 1.8rem;
     }
-  
+
     h2 {
       font-size: 1.3rem;
     }
-  
+
     p {
       font-size: 0.9rem;
     }
-  
+
     .profile-pic {
       width: 100px;
       height: 100px;
     }
-  
+
     .countdown-item {
       width: 70px;
       padding: 0.5rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}  }    transform: translateY(0);    opacity: 1;  to {@keyframes fadeIn {}  animation: fadeIn 1s ease forwards;  transform: translateY(20px);  opacity: 0;.fade-in {  /* Animation d'apparition */    }    }    }
-  
     .countdown-item span {
       font-size: 1.4rem;
     }
-  
+
     #countdown-timer {
       gap: 1rem;
       padding: 1rem;
@@ -342,4 +326,18 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrage horizontal */
+  }
+  
+  /* Animation d'apparition */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
