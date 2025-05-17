@@ -20,3 +20,30 @@ const x = setInterval(function() {
     document.getElementById("countdown-timer").innerHTML = "C'est le moment de commencer à travailler!";
   }
 }, 1000);
+
+const countdownTimer = () => {
+  const daysElement = document.getElementById('days');
+  const hoursElement = document.getElementById('hours');
+  const minutesElement = document.getElementById('minutes');
+  const secondsElement = document.getElementById('seconds');
+
+  let totalSeconds = 1; // Commence à une seconde
+
+  const updateCountdown = () => {
+    const days = Math.floor(totalSeconds / (24 * 3600));
+    const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    daysElement.textContent = days;
+    hoursElement.textContent = hours;
+    minutesElement.textContent = minutes;
+    secondsElement.textContent = seconds;
+
+    totalSeconds++;
+  };
+
+  setInterval(updateCountdown, 1000); // Met à jour toutes les secondes
+};
+
+document.addEventListener('DOMContentLoaded', countdownTimer);
